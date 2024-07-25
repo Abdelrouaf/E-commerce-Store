@@ -1,0 +1,83 @@
+@import url("../base/base.css");
+
+.comparison {
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    padding: 50px 0;
+}
+
+.comparison .compare-box {
+    overflow-x: scroll;
+}
+
+.comparison table thead th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 10px;
+}
+
+.comparison table tbody td {
+    vertical-align: middle;
+}
+
+.comparison table tbody td .image {
+    overflow: hidden;
+}
+
+.comparison table tbody td .image img {
+    height: auto;
+    width: 250px;
+}
+
+.comparison table tbody td .stars i {
+    color: var(--yellow-color);
+}
+
+.comparison table tbody td .price span {
+    text-decoration: line-through;
+    color: var(--red-color);
+    margin-right: 10px;
+}
+
+.comparison table tbody td .availability p {
+    color: var(--green-color);
+    font-weight: 800;
+}
+
+.comparison .table .cart button{
+    background-color: var(--green-color);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.comparison .table .cart button:hover{
+    background-color: rgba(0, 195, 78, 0.801);
+}
+
+
+.comparison .table .delete button{
+    background-color: var(--red-color);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.comparison .table .delete button:hover{
+    background-color: rgba(234, 27, 37, 0.801);
+}
+
+.head-into {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dnone {
+    display: none;
+}

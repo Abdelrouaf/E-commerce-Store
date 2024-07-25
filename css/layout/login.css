@@ -1,0 +1,335 @@
+.intro-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 500;
+}
+
+.intro-text h3 {
+    color: var(--light-green);
+    text-transform: capitalize;
+    font-size: 36px;
+    font-family: var(--title-font);
+}
+
+.intro-text h1 {
+    color: var(--dark-blue);
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.intro-text p {
+    color: var(--paragraph-color);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.head-title {
+    margin-bottom: 20px;
+}
+
+.head-title h3 {
+    color: var(--dark-blue);
+    font-size: 36px;
+    text-transform: none;
+    display: inline-block;
+}
+
+.head-title h3::first-letter {
+    text-transform: uppercase;
+}
+
+.head-title a {
+    margin-left: 30px;
+}
+
+.swap {
+    display: flex;
+    gap: 10px;
+}
+
+.swap span {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+}
+
+.swap span:hover {
+    cursor: pointer;
+    background-color: var(--blue-color);
+}
+
+
+.swap span:hover i {
+    color: #fff;
+}
+
+.common-animate {
+    display: inline-block;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.common-animate a {
+    color: var(--dark-blue) !important;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 14px !important;
+    padding-bottom: 5px;
+    position: relative;
+    display: inline !important;
+}
+
+.common-animate a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background-color: var(--dark-blue);
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.common-animate a:hover:before {
+    width: 100%;
+}
+
+.common-animate span {
+    background-color: var(--blue-color);
+    display: inline-flex;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.common-animate span i {
+    color: #fff;
+    font-size: 12px;
+}
+
+.common-animate:hover a:before {
+    width: 100%;
+}
+
+.common-animate:hover span {
+    background-color: var(--light-green);
+}
+
+.header .top-header {
+    display: none;
+}
+
+.header .main-header .navbar {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+/* Start Login Style */
+.login {
+    background-image: url(../../images/login.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login .container,
+.login .row{
+    height: 100%;
+}
+
+.login .titles {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    color: black;
+}
+
+.login .titles h3 {
+    font-size: 60px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.login .titles h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.login .titles .social i {
+    margin-right: 10px;
+}
+
+.login .titles .social {
+    margin: 20px 0;
+}
+
+.login .titles .social i {
+    font-size: 18px;
+    color: rgb(0, 0, 0, );
+}
+
+.login .form {
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    height: 100%;
+    padding: 60px 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.login .form .heading-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login .form .heading-title h2 {
+    color: var(--black-color);
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: hel-medium;
+}
+
+.login .form .input-group {
+    text-align: center;
+}
+
+.login .form .input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid var(--black-color);
+    color: var(--black-color);
+    font-size: 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.login .form .input-group input::placeholder {
+    color: var(--black-color);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.login .form .input-group input:focus::placeholder {
+    color: transparent;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+}
+
+.login .form .remember-forget {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .form .remember-forget .remember span {
+    color: var(--dark-blue);
+}
+
+.login .form .remember-forget .forget a {
+    color: var(--dark-blue);
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.login .form .remember-forget .forget a:hover {
+    color: #44d7b6;
+}
+
+.login .form .button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login .form .button button {
+    padding: 10px 25px;
+    width: 100%;
+    background-color: #002248;
+    border: none;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.login .form .button button:hover {
+    background-color: #011327;
+}
+
+.login .form .have-account {
+    text-align: center;
+}
+
+.login .form .have-account a {
+    color: var(--red-color);
+    margin-left: 5px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+}
+
+.login .form .have-account a:hover {
+    color: var(--light-green);
+}
+/* End Login Style */

@@ -1,0 +1,92 @@
+.footer .footer-box .boxes {
+    margin-top: 15px;
+}
+
+.footer .footer-box .boxOne .logo img{
+    width: auto;
+}
+
+.footer .footer-box .boxOne p {
+    color: var(--text-color);
+    text-transform: capitalize;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.footer .footer-box .boxOne .social h4 i {
+    color: var(--text-color);
+    font-size: 15px;
+    margin-right: 10px;
+    color: var(--black-color);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.footer .footer-box .boxOne .social h4 i:hover {
+    color: var(--red-color);
+}
+
+.footer .footer-box .boxes h3 {
+    text-transform: capitalize;
+    font-size: 19px;
+    font-family: jost-medium;
+    margin-bottom: 15px;
+}
+
+.footer .footer-box .boxes ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-box .boxes ul li {
+    padding: 5px 0;
+}
+
+.footer .footer-box .boxes ul li a {
+    text-transform: capitalize;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.footer .footer-box .boxes ul li a:hover {
+    color: var(--red-color);
+}
+
+.footer .footer-box .boxFour p {
+    color: var(--text-color);
+    text-transform: capitalize;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.footer .footer-box .boxFour .input input::placeholder {
+    font-size: 14px;
+}
+
+.footer .footer-box .boxFour .input .homeBtn {
+    padding: 10px;
+}
+
+.footer .footer-bottom {
+    border-top: 1px solid rgb(0, 0, 0, 0.07);
+    padding: 20px 0;
+}
+
+.footer .footer-bottom p {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.footer .footer-bottom p span {
+    color: var(--red-color);
+}

@@ -1,0 +1,234 @@
+.contactInfo .box {
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.contactInfo .box .icon {
+    margin-right: 30px;
+}
+
+.contactInfo .box .icon i {
+    font-size: 25px;
+    color: var(--black-color);
+}
+
+.contactInfo .box .title h4 {
+    text-transform: capitalize;
+    font-family: jost-medium;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contactInfo .box p {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.contactInfo .box a p {
+    color: rgb(120,121,129);
+    font-size: 14px;
+} 
+
+.contactInfo .box.one {
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.contact {
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    background-image: url("https://themexriver.com/wp/flaxoc/wp-content/uploads/2023/06/6-1.jpg");
+    background-size: cover;
+    height: 510px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact .message-box {
+    border: 1px solid #f4f4f4;
+    box-shadow: 0px 26px 32px rgba(0, 0, 0, 0.03);
+    padding: 60px 80px 60px;
+    background-color: var(--white-color);
+    margin: 50px 0 0;
+}
+
+.contact .message-box .title {
+    text-align: center;
+}
+
+.contact .message-box .title h3 {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-family: jost-medium;
+}
+
+.contact .message-box .title p {
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    color: rgb(120,121,129);
+}
+
+.contact .message-box .input-box .inputBox {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    position: relative;
+    padding: 15px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.contact .message-box .input-box .inputBox input {
+    border: none;
+    width: 100%;
+}
+
+.contact .message-box .input-box .inputBox textarea {
+    border: none;
+}
+
+.contact .message-box .input-box .inputBox input::placeholder,
+.contact .message-box .input-box .inputBox textarea::placeholder {
+    text-transform: capitalize;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.contact .message-box .input-box .inputBox input:focus,
+.contact .message-box .input-box .inputBox textarea:focus {
+    outline: none;
+}
+
+.contact .message-box .input-box .inputBox input:focus::placeholder,
+.contact .message-box .input-box .inputBox textarea:focus::placeholder {
+    color: transparent;
+}
+
+.contact .message-box .input-box .inputBox i {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    bottom: 15px;
+}
+
+.contact .message-box .input-box .inputBox select {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.contact .message-box .input-box .inputBox:hover {
+    border: 1px solid var(--red-color);
+}
+
+.contact .message-box a.homeBtn {
+    text-transform: uppercase;
+}
+
+.contact .map {
+    margin: 100px 0 50px;
+}
+
+/* Start Info Style */
+.info .info-box {
+    box-shadow: none;
+}
+
+.info .info-box .x-axis {
+    height: 100%;
+    background-color: var(--white-color);
+    padding: 0;
+}
+
+.info .info-box .left {
+    border-right: 1px solid rgba(109, 111, 120, 0.24);
+}
+
+.info .info-box .x-axis .y-axis {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+@keyframes flp {
+    0% {
+        transform: rotateX(-90deg) rotateY(-180deg);
+        -webkit-transform: rotateX(-90deg) rotateY(-180deg);
+        -moz-transform: rotateX(-90deg) rotateY(-180deg);
+        -ms-transform: rotateX(-90deg) rotateY(-180deg);
+        -o-transform: rotateX(-90deg) rotateY(-180deg);
+}
+
+    100% {
+        transform: rotateX(0) rotateY(0);
+        -webkit-transform: rotateX(0) rotateY(0);
+        -moz-transform: rotateX(0) rotateY(0);
+        -ms-transform: rotateX(0) rotateY(0);
+        -o-transform: rotateX(0) rotateY(0);
+}
+}
+
+.info .info-box .x-axis .y-axis:hover .icon i {
+    animation-name: flp;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+
+}
+
+.info .info-box .x-axis .y-axis .icon {
+    margin-right: 20px;
+}
+
+.info .info-box .x-axis .y-axis .icon i {
+    font-size: 25px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s; 
+}
+
+.info .info-box .right {
+    margin-left: 20px;
+}
+
+.info .info-box .left .top .icon i {
+    color: var(--black-color);
+}
+
+.info .info-box .left .bottom .icon i {
+    color: var(--black-color);
+}
+
+.info .info-box .right .top .icon i {
+    color: var(--black-color);
+}
+
+.info .info-box .right .bottom .icon i {
+    color: var(--black-color);
+}
+
+.info .info-box .x-axis .y-axis .title h4 {
+    font-size: 16px;
+    color: var(--text-color);
+    text-transform: capitalize;
+    font-family: jost-medium;
+    margin-bottom: 8px;
+}
+
+.info .info-box .x-axis .y-axis .title p {
+    font-size: 15px;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+/* End Info Style */

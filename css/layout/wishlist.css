@@ -1,0 +1,187 @@
+@import url("../base/base.css");
+
+td, th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.wishlist .table .image {
+    width: 100px;
+}
+
+.wishlist .table .image a img {
+    background-color: rgb(248,248,249);
+    height: auto;
+    max-width: 100%;
+}
+
+.wishlist .table .addCart button{
+    background-color: var(--green-color);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.wishlist .table .addCart button:hover{
+    background-color: rgba(0, 195, 78, 0.801);
+}
+
+.wishlist .table .delete button{
+    background-color: var(--red-color);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.wishlist .table .delete button:hover{
+    background-color: rgba(234, 27, 37, 0.801);
+}
+
+.wishlist .table .quantity p {
+    border: 1px solid #ddd;
+    color: var(--black-color);
+    position: relative;
+    font-size: 14px;
+}
+
+.wishlist .table .quantity p .counter {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.wishlist .code::placeholder {
+    text-transform: capitalize;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.wishlist .code:focus::placeholder {
+    color: transparent;
+}
+
+.wishlist .update {
+    text-transform: capitalize;
+}
+
+.wishlist .update-cart .couponBtn button {
+    width: max-content;
+}
+
+.wishlist .cart-totals {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.wishlist .cart-totals h4 {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: jost-bold;
+}
+
+.wishlist .cart-totals .title,
+.wishlist .cart-totals .price,
+.wishlist .cart-totals .how,
+.order-box {
+    padding: 15px 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.wishlist .cart-totals .how span {
+    font-size: 14px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.checkoutBox {
+    padding: 20px 40px !important;
+}
+
+.billing-details h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: jost-medium;
+    margin-bottom: 15px;
+}
+
+.billing-details label {
+    text-transform: capitalize;
+}
+
+.billing-details input {
+    margin-bottom: 10px;
+}
+
+.billing-details select {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.billing-details input::placeholder, 
+.billing-details textarea::placeholder {
+    text-transform: capitalize;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.billing-details input:focus::placeholder,
+.billing-details textarea:focus::placeholder {
+    color: transparent;
+} 
+
+.order-box .orders .left p {
+    font-size: 14px;
+}
+
+.checkoutBox .payments .way {
+    margin-bottom: 10px;
+}
+
+.checkoutBox .payments .way label {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-family: jost-medium;
+}
+
+.checkoutBox .payments p {
+    font-size: 14px;
+    color: rgb(136,134,134);
+    margin: 10px 0;
+}
+
+.checkoutBox .payments .special {
+    color: var(--red-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkoutBox .payments .rights label {
+    display: inline;
+}
+
+.wishlist {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    padding: 50px 0;
+}
+
+.head-into {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dnone {
+    display: none;
+}

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: jost-black;
+    src: url("../../font/static/Jost-Black.ttf");
+}
+
+@font-face {
+    font-family: jost-bold;
+    src: url("../../font/static/Jost-Bold.ttf");
+}
+
+@font-face {
+    font-family: jost-semi-bold;
+    src: url("../../font/static/Jost-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: jost-extra-bold;
+    src: url("../../font/static/Jost-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: jost-light;
+    src: url("../../font/static/Jost-Light.ttf");
+}
+
+@font-face {
+    font-family: jost-medium;
+    src: url("../../font/static/Jost-Medium.ttf");
+}
+
+@font-face {
+    font-family: jost-regular;
+    src: url("../../font/static/Jost-Regular.ttf");
+}
+
+@font-face {
+    font-family: jost-thin;
+    src: url("../../font/static/Jost-Thin.ttf");
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+
+
+@font-face {
+    font-family: hel-black;
+    src: url("../../font/Helvetica/Helvetica-Black-Condensed.otf");
+}
+
+@font-face {
+    font-family: hel-bold-con;
+    src: url("../../font/Helvetica/Helvetica-Bold-Condensed.otf");
+}
+
+@font-face {
+    font-family: hel-ce-bold-con;
+    src: url("../../font/Helvetica/Helvetica-CE-Bold-Condensed.otf");
+}
+
+@font-face {
+    font-family: hel-bold-nar;
+    src: url("../../font/Helvetica/Helvetica-CE-Bold-Narrow.otf");
+}
+
+@font-face {
+    font-family: hel-bold;
+    src: url("../../font/Helvetica/Helvetica-CE-Bold.otf");
+}
+
+@font-face {
+    font-family: hel-medium;
+    src: url("../../font/Helvetica/Helvetica-CE-Medium.otf");
+}
+
+@font-face {
+    font-family: hel-roman;
+    src: url("../../font/Helvetica/Helvetica-Roman.ttf");
+}

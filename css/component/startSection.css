@@ -1,0 +1,21 @@
+.start {
+    background-image: url(../../images/5.jpg);
+    background-size: cover;
+    padding: 250px 0 0;
+    position: relative;
+    margin-bottom: 50px;
+    height: 100%;
+}
+
+.start .start-title {
+    background-image: url(https://themexriver.com/wp/flaxoc/wp-content/themes/flaxoc/assets/images/icons/vector-40.png);
+    background-clip: border-box;
+    background-position: center -40px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-family: hel-bold-con;
+}
+
