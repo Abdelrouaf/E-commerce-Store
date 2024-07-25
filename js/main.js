@@ -26,7 +26,7 @@ alrt.addEventListener("click", function() {
 })
 
 const getProducts = async function() {
-    const apiProducts = await fetch("../product.json");
+    const apiProducts = await fetch("https://github.com/Abdelrouaf/E-commerce-Store/blob/main/product.json");
     const products = await apiProducts.json();
     localStorage.setItem("ShopProducts", JSON.stringify(shopContainer));
     displayProducts(products);
