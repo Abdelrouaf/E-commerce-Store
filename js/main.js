@@ -2,6 +2,7 @@ let menuBar = document.getElementById("menuBar");
 let close = document.getElementById("close");
 let menuBars = document.getElementById("menuBars")
 let box = document.getElementById("box")
+let shop = document.getElementById("shop");
 
 let alrt = document.getElementById("alrt");
 
@@ -101,7 +102,7 @@ if(localStorage.getItem("ShopProducts") == null) {
 
 
 function displayProducts(products) {
-    let shop = document.getElementById("shop");
+    
     let container = '';
     for (let i = 0 ; i < 2; i++) {
         let star = '';
