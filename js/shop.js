@@ -1,3 +1,8 @@
+
+
+let cardShop = document.getElementById("cardShop");
+let shops = document.getElementById("shops");
+
 let productItems = []
 
 if(localStorage.getItem("ShopProducts") == null) {
@@ -6,18 +11,53 @@ if(localStorage.getItem("ShopProducts") == null) {
     productItems = JSON.parse(localStorage.getItem("ShopProducts"));
 }
 
-const getAllProducts = async function() {
-    const apiProducts = await fetch("../product.json");
-    const products = await apiProducts.json();
-    productItems = products;
-    localStorage.setItem("ShopProducts", JSON.stringify(productItems));
-    displayAllShops(products);
-    displayShops(products)
+let wishlistContainer;
+if (localStorage.getItem("productWishlist") == null) {
+    wishlistContainer = [];
+} else {
+    wishlistContainer = JSON.parse(localStorage.getItem("productWishlist"));
 }
-getAllProducts();
+let cart = [];
+
+if (localStorage.getItem("addToCart") == null) {
+    cart = [];
+} else {
+    cart = JSON.parse(localStorage.getItem("addToCart"));
+}
+
+let compareProduct2 = [];
+
+if (localStorage.getItem("compareProduct") == null) {
+    compareProduct2 = [];
+} else {
+    compareProduct2 = JSON.parse(localStorage.getItem("compareProduct"));
+}
+
+let cartCount = document.querySelector(".cart-count");
+cartCount.textContent = cart.length;
+
+let wishlistCount = document.querySelector(".wishlist-count");
+wishlistCount.textContent = wishlistContainer.length;
+
+let compareCount = document.querySelector(".compareCount");
+compareCount.textContent = compareProduct2.length;
+
+localStorage.setItem("ShopProducts", JSON.stringify(ProductsAPI));
+displayAllShops(ProductsAPI);
+displayShops(ProductsAPI)
+
+// const getAllProducts = async function() {
+//     const apiProducts = await fetch("../product.json");
+//     const products = await apiProducts.json();
+//     productItems = products;
+//     localStorage.setItem("ShopProducts", JSON.stringify(productItems));
+//     displayAllShops(products);
+//     displayShops(products)
+// }
+// getAllProducts();
 
 ////////////////////////////////////////////////
-let cardShop = document.getElementById("cardShop");
+
 function displayAllShops(products) {
     let list2 = '';
     for (let i = 0; i < (products.length) / 2; i++) {
@@ -69,7 +109,6 @@ function displayAllShops(products) {
 }
 
 /////////////////////////////////////////
-let shops = document.getElementById("shops");
 function displayShops(products) {
     let list = '';
     for (let i = 0; i < products.length; i++) {
@@ -153,12 +192,7 @@ function displayShops(products) {
 }
 
 /////////////////////////////////////////////////////////////////////////////
-let wishlistContainer;
-if (localStorage.getItem("productWishlist") == null) {
-    wishlistContainer = [];
-} else {
-    wishlistContainer = JSON.parse(localStorage.getItem("productWishlist"));
-}
+
 /////////////////////////////////////
 function addToWishlist(i) {
     let day = new Date();
@@ -178,30 +212,6 @@ function addToWishlist(i) {
     location.reload();
 }
 /////////////////////////////////////
-let cart = [];
-
-if (localStorage.getItem("addToCart") == null) {
-    cart = [];
-} else {
-    cart = JSON.parse(localStorage.getItem("addToCart"));
-}
-
-let compareProduct2 = [];
-
-if (localStorage.getItem("compareProduct") == null) {
-    compareProduct2 = [];
-} else {
-    compareProduct2 = JSON.parse(localStorage.getItem("compareProduct"));
-}
-
-let cartCount = document.querySelector(".cart-count");
-cartCount.textContent = cart.length;
-
-let wishlistCount = document.querySelector(".wishlist-count");
-wishlistCount.textContent = wishlistContainer.length;
-
-let compareCount = document.querySelector(".compareCount");
-compareCount.textContent = compareProduct2.length;
 
 function addToCart(i) {
     let ShopProducts = JSON.parse(localStorage.getItem("ShopProducts"));
