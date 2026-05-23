@@ -270,6 +270,7 @@ let menuBar = document.getElementById("menuBar");
 let close = document.getElementById("close");
 let menuBars = document.getElementById("menuBars");
 let box = document.getElementById("box");
+
 let alrt = document.getElementById("alrt");
 
 let shopContainer = [];
@@ -424,7 +425,82 @@ function displayBlogs(blogs) {
     row.innerHTML = list;
 }
 
-///////////////////////////////////////////////////////////////////
+function displayBestSeller(products) {
+    let list = '';
+    for(let i = 0; i < 4; i++) {
+        let star = '';
+        let count = products[i].stars;
+        for (let j = 1; j <= 5; j++) {
+            if (count >= 1) {
+                star += `<i class="fa-solid fa-star"></i>`
+                count--;
+            } else if (count == 0.5) {
+                star += `<i class="fa-solid fa-star-half-stroke"></i>`
+            } else {
+                star += `<i class="fa-regular fa-star"></i>`
+            }
+        }
+    
+        list += 
+        `
+        
+        <div class="col-md-6 col-lg-3">
+        
+            <div class="card">
+                
+                <div class="image">
+            
+                    <img src="${products[i].imageSrc}" alt="">
+                
+                    <div class="icons">
+                    
+                        <button class="shape" onclick="addToWishlist(${i})" title="add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        
+                        <button class="shape" onclick="addToCart(${i})" title="add to cart"><i class="fa-brands fa-opencart"></i></button>
+                    
+                        <a href="../pages/quickview.html" class="shape" onclick="quickView(${i})" title="view"><i class="fa-regular fa-eye"></i></a>
+                    
+                        <button onclick="compareItem(${i})" class="shape" title="add to compare"><i class="fa-solid fa-shuffle"></i></button>
+                    
+                    </div>
+                
+                    <div class="sale">
+                    
+                        <span>${products[i].sale}</span>
+                    
+                    </div>
+                
+                    <div class="shopbtn">
+                    
+                        <a href="../pages/quickview.html" onclick="quickView(${i})" class="btn btn-primary homeBtn">view more</a>
+                    
+                    </div>
+            
+                </div>
+            
+                <div class="card-body">
+                
+                    <div class="stars">
+                    
+                        ${star}
+                    
+                    </div>
+                
+                    
+                    <a href="#"><h5>${products[i].title}</h5></a>
+                
+                    <p><span class="before">$${products[i].oldPrice}.00</span> <span class="after">$${products[i].price}.00</span></p>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        `
+    }
+    bestSeller.innerHTML = list;
+}
 
 let allCart = JSON.parse(localStorage.getItem("addToCart")) || [];
 let allWishlist = JSON.parse(localStorage.getItem("productWishlist")) || [];
