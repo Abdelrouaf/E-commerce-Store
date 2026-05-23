@@ -512,78 +512,36 @@
 }
 
 @keyframes slide {
-    0% {
+
+    0%,
+    30% {
         transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
     }
-    
-    20% {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-}
-    
-    400% {
-        transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
-}
-    
-    60% {
-        transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
-}
-    
-    80% {
-        transform: translateX(-200%);
-        -webkit-transform: translateX(-200%);
-        -moz-transform: translateX(-200%);
-        -ms-transform: translateX(-200%);
-        -o-transform: translateX(-200%);
-}
-    
+
+    33%,
+    63% {
+        transform: translateX(-33.33%);
+    }
+
+    66%,
+    96% {
+        transform: translateX(-66.66%);
+    }
+
     100% {
-        transform: translateX(-200%);
-        -webkit-transform: translateX(-200%);
-        -moz-transform: translateX(-200%);
-        -ms-transform: translateX(-200%);
-        -o-transform: translateX(-200%);
+        transform: translateX(0);
     }
 }
 
 .showItems .showItemsBox .middle-card .bigImage .images {
-    transition: transform .5s;
-    -webkit-transition: transform .5s;
-    -moz-transition: transform .5s;
-    -ms-transition: transform .5s;
-    -o-transition: transform .5s;
+    width: 300%;
+    animation: slide 15s linear infinite;
+    -webkit-animation: slide 15s linear infinite;
 }
 
 .showItems .showItemsBox .middle-card .bigImage .images img {
+    width: 33.33%;  
     border-radius: 170px 170px 0 0;
-    -webkit-border-radius: 170px 170px 0 0;
-    -moz-border-radius: 170px 170px 0 0;
-    -ms-border-radius: 170px 170px 0 0;
-    -o-border-radius: 170px 170px 0 0;
-    animation-name: slide;
-    animation-duration: 15s;
-    animation-timing-function: step-start;
-    animation-iteration-count: infinite;
-    transition: transform .5s;
-    -webkit-transition: transform .5s;
-    -moz-transition: transform .5s;
-    -ms-transition: transform .5s;
-    -o-transition: transform .5s;
 }
 
 .showItems .showItemsBox .middle-card .bigImage::before {
@@ -598,7 +556,7 @@
     z-index: -100;
 }
 
-.showItems .showItemsBox .middle-card .bigImage a {
+.showItems .showItemsBox .middle-card a {
     position: absolute;
     left: 50%;
     z-index: 5;
