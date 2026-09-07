@@ -170,7 +170,7 @@ function displayShops(products) {
                     </div>
                 
                     
-                    <a href="#"><h5>${products[i].title}</h5></a>
+                    <a href="../pages/quickview.html" onclick="quickView(${i})"><h5>${products[i].title}</h5></a>
                 
                     <div class="switch">
                     

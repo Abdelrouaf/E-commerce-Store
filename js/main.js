@@ -241,21 +241,21 @@ function displayProducts(products) {
                     <div class="icons">
                         <button class="shape" onclick="addToWishlist(${i})" title="add to wishlist"><i class="fa-regular fa-heart"></i></button>
                         <button class="shape" onclick="addToCart(${i})" title="add to cart"><i class="fa-brands fa-opencart"></i></button>
-                        <a href="../pages/quickview.html" class="shape" onclick="quickView(${i})" title="view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="pages/quickview.html" class="shape" onclick="quickView(${i})" title="view"><i class="fa-regular fa-eye"></i></a>
                         <button onclick="compareItem(${i})" class="shape" title="add to compare"><i class="fa-solid fa-shuffle"></i></button>
                     </div>
                     <div class="sale">
                         <span>${products[i].sale}</span>
                     </div>
                     <div class="shopbtn">
-                        <a href="../pages/quickview.html" onclick="quickView(${i})" class="btn btn-primary homeBtn">view more</a>
+                        <a href="pages/quickview.html" onclick="quickView(${i})" class="btn btn-primary homeBtn">view more</a>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="stars">
                         ${star}
                     </div>
-                    <a href="#"><h5>${products[i].title}</h5></a>
+                    <a href="pages/quickview.html" onclick="quickView(${i})"><h5>${products[i].title}</h5></a>
                     <p><span class="before">$${products[i].oldPrice}.00</span> <span class="after">$${products[i].price}.00</span></p>
                 </div>
             </div>
@@ -336,21 +336,21 @@ function displayBestSeller(products) {
                     <div class="icons">
                         <button class="shape" onclick="addToWishlist(${i})" title="add to wishlist"><i class="fa-regular fa-heart"></i></button>
                         <button class="shape" onclick="addToCart(${i})" title="add to cart"><i class="fa-brands fa-opencart"></i></button>
-                        <a href="../pages/quickview.html" class="shape" onclick="quickView(${i})" title="view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="pages/quickview.html" class="shape" onclick="quickView(${i})" title="view"><i class="fa-regular fa-eye"></i></a>
                         <button onclick="compareItem(${i})" class="shape" title="add to compare"><i class="fa-solid fa-shuffle"></i></button>
                     </div>
                     <div class="sale">
                         <span>${products[i].sale}</span>
                     </div>
                     <div class="shopbtn">
-                        <a href="../pages/quickview.html" onclick="quickView(${i})" class="btn btn-primary homeBtn">view more</a>
+                        <a href="pages/quickview.html" onclick="quickView(${i})" class="btn btn-primary homeBtn">view more</a>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="stars">
                         ${star}
                     </div>
-                    <a href="#"><h5>${products[i].title}</h5></a>
+                    <a href="pages/quickview.html" onclick="quickView(${i})><h5>${products[i].title}</h5></a>
                     <p><span class="before">$${products[i].oldPrice}.00</span> <span class="after">$${products[i].price}.00</span></p>
                 </div>
             </div>
